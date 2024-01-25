@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Operations</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+        h1 {
+            color: #333;
+        }
+        button {
+            font-size: 18px;
+            margin: 10px;
+            padding: 15px 30px;
+            cursor: pointer;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Select a Math Operation</h1>
+
+<button onclick="goToPage('addition')">Addition</button>
+<button onclick="goToPage('multiplication')">Multiplication</button>
+<button onclick="goToPage('division')">Division</button>
+<button onclick="goToPage('subtraction')">Subtraction</button>
+<button onclick="goToPage('square')">Square</button>
+<button onclick="goToPage('squareRoot')">Square Root</button>
+<button onclick="goToPage('table')">Multiplication Table</button>
+
+<script>
+    function goToPage(operation) {
+        switch (operation) {
+            case 'addition':
+                window.location.href = 'addition.html';
+                break;
+            case 'multiplication':
+                window.location.href = 'multiplication.html';
+                break;
+            case 'division':
+                window.location.href = 'division.html';
+                break;
+            case 'subtraction':
+                window.location.href = 'subtraction.html';
+                break;
+            case 'square':
+                window.location.href = 'square.html';
+                break;
+            case 'squareRoot':
+                window.location.href = 'squareRoot.html';
+                break;
+            case 'table':
+                window.location.href = 'multiplicationTable.html';
+                break;
+            default:
+                break;
+        }
+    }
+</script>
+
+</body>
+</html>
